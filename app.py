@@ -3,27 +3,41 @@ import streamlit as st
 
 # Personalizzazioni CSS
 
-st.markdown(
-    """
+st.markdown("""
     <style>
-    
-    input[type="text"] {
-        background-color: #111111;
-        color: #00FFAA;
-        border: 1px solid #555;
+
+    /* Importa un font da Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+    /* Applica il font a tutta l'app */
+    html, body, [class*="css"] {
+        font-family: 'Roboto Mono', monospace;
+        color: #F8F8F2;
+        background-color: #1E1E1E;
     }
 
+    /* Colore di sfondo generale dell'app */
+    .stApp {
+        background-color: #1E1E1E;
+        color: #F8F8F2;
+    }
+
+    /* Stile per il campo input */
+    input[type="text"] {
+        background-color: #2C2C2C;
+        color: #00FFAA;
+        border: 1px solid #555;
+        padding: 0.5rem;
+        border-radius: 0.4rem;
+    }
+
+    /* Colore del placeholder (testo grigio iniziale) */
     input::placeholder {
         color: #888888;
-        
-    .stApp {
-        background-color: #262e9e;
-        color: #9e2664;
     }
-    
+
     </style>
-    """,
-    unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
 chiave = st.secrets["superkey"]
 
