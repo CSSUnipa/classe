@@ -9,22 +9,6 @@ st.markdown("""
         background-color: #1E1E1E;
         color: #FFFFFF;
     }
-
-    .custom-label {
-        color: #00FFAA;
-        font-weight: bold;
-        font-size: 18px;
-        margin-bottom: 8px;
-        display: block;
-    }
-
-    input[type="text"] {
-        background-color: #2C2C2C;
-        color: #FFFFFF;
-        border: 1px solid #555;
-        border-radius: 4px;
-        padding: 8px;
-    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -85,7 +69,8 @@ if file is not None:
       st.session_state.domanda = ""  
       # reset dopo invio
 
-    st.text_input("Chiedi al chatbot:", key="domanda", on_change=invia)
+    st.write("Chiedi al chatbot")
+    st.text_input("", key="domanda", on_change=invia)
     # key="domanda": assegna a st.session_state ciò che scriviamo (domanda)
     # Ogni volta che l’utente modifica il campo e preme Invio, 
     # la funzione invia() viene chiamata.
