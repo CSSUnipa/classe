@@ -27,7 +27,7 @@ st.markdown("""
 
     /* Colore del placeholder */
     input::placeholder {
-        color: #888888;
+        color: #e01044;
     }
 
     </style>
