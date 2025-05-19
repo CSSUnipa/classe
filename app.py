@@ -5,22 +5,21 @@ import streamlit as st
 
 st.markdown("""
     <style>
-
-    /* Sfondo dell'app */
+    /* Sfondo generale */
     .stApp {
         background-color: #1E1E1E;
         color: #FFFFFF;
     }
 
-    /* Etichetta "Chiedi al chatbot" */
-    label {
-        color: #e01044;
+    /* Cambia la scritta "Chiedi al chatbot" */
+    div[data-baseweb="input"] > div:first-child {
+        color: #00FFAA;
         font-weight: bold;
         font-size: 1.1rem;
     }
-
     </style>
 """, unsafe_allow_html=True)
+
 chiave = st.secrets["superkey"]
 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
