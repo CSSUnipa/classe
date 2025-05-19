@@ -6,10 +6,21 @@ import streamlit as st
 st.markdown(
     """
     <style>
+    
+    input[type="text"] {
+        background-color: #111111;
+        color: #00FFAA;
+        border: 1px solid #555;
+    }
+
+    input::placeholder {
+        color: #888888;
+        
     .stApp {
         background-color: #262e9e;
         color: #9e2664;
     }
+    
     </style>
     """,
     unsafe_allow_html=True)
