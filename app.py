@@ -5,17 +5,17 @@ import streamlit as st
 
 st.markdown("""
     <style>
-    /* Sfondo generale */
     .stApp {
         background-color: #1E1E1E;
         color: #FFFFFF;
     }
 
-    /* Cambia la scritta "Chiedi al chatbot" */
-    div[data-baseweb="input"] > div:first-child {
-        color: #e01044;
+    .custom-label {
+        color: #e0103d;
         font-weight: bold;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+        display: block;
     }
     </style>
 """, unsafe_allow_html=True)
