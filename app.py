@@ -25,7 +25,7 @@ st.markdown("""
     /* Stile per il campo input */
     input[type="text"] {
         background-color: #2C2C2C;
-        color: #00FFAA;
+        color: #101ae0;
         border: 1px solid #555;
         padding: 0.5rem;
         border-radius: 0.4rem;
