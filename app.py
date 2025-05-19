@@ -9,31 +9,25 @@ st.markdown("""
     /* Importa un font da Google Fonts */
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-    /* Applica il font a tutta l'app */
-    html, body, [class*="css"] {
-        font-family: 'Roboto Mono', monospace;
-        color: #F8F8F2;
-        background-color: #1E1E1E;
-    }
-
-    /* Colore di sfondo generale dell'app */
+    /* Applica font, colore testo e sfondo direttamente all'app */
     .stApp {
-        background-color: #101ae0;
+        font-family: 'Roboto Mono', monospace;
+        background-color: #1E1E1E;
         color: #F8F8F2;
     }
 
     /* Stile per il campo input */
     input[type="text"] {
         background-color: #2C2C2C;
-        color: #101ae0;
+        color: #e01044;
         border: 1px solid #555;
         padding: 0.5rem;
         border-radius: 0.4rem;
     }
 
-    /* Colore del placeholder (testo grigio iniziale) */
+    /* Colore del placeholder */
     input::placeholder {
-        color: #d6e010;
+        color: #888888;
     }
 
     </style>
