@@ -71,6 +71,7 @@ if file is not None:
 
     st.write("")
     st.markdown("**Chiedi al chatbot**")
+    st.markdown("<div style='margin-top: -15px'></div>", unsafe_allow_html=True)  # riduce spazio
     st.text_input("", key="domanda", on_change=invia)
     # key="domanda": assegna a st.session_state ciò che scriviamo (domanda)
     # Ogni volta che l’utente modifica il campo e preme Invio, 
