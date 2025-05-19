@@ -11,11 +11,19 @@ st.markdown("""
     }
 
     .custom-label {
-        color: #e0103d;
+        color: #00FFAA;
         font-weight: bold;
-        font-size: 1.2rem;
-        margin-bottom: 0.3rem;
+        font-size: 18px;
+        margin-bottom: 8px;
         display: block;
+    }
+
+    input[type="text"] {
+        background-color: #2C2C2C;
+        color: #FFFFFF;
+        border: 1px solid #555;
+        border-radius: 4px;
+        padding: 8px;
     }
     </style>
 """, unsafe_allow_html=True)
