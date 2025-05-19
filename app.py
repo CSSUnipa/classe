@@ -13,7 +13,7 @@ st.markdown("""
 
     /* Cambia la scritta "Chiedi al chatbot" */
     div[data-baseweb="input"] > div:first-child {
-        color: #00FFAA;
+        color: #e01044;
         font-weight: bold;
         font-size: 1.1rem;
     }
