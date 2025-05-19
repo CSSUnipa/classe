@@ -6,33 +6,21 @@ import streamlit as st
 st.markdown("""
     <style>
 
-    /* Importa un font da Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-
-    /* Applica font, colore testo e sfondo direttamente all'app */
+    /* Sfondo dell'app */
     .stApp {
-        font-family: 'Roboto Mono', monospace;
         background-color: #1E1E1E;
-        color: #F8F8F2;
+        color: #FFFFFF;
     }
 
-    /* Stile per il campo input */
-    input[type="text"] {
-        background-color: #2C2C2C;
+    /* Etichetta "Chiedi al chatbot" */
+    label {
         color: #e01044;
-        border: 1px solid #555;
-        padding: 0.5rem;
-        border-radius: 0.4rem;
-    }
-
-    /* Colore del placeholder */
-    input::placeholder {
-        color: #e01044;
+        font-weight: bold;
+        font-size: 1.1rem;
     }
 
     </style>
 """, unsafe_allow_html=True)
-
 chiave = st.secrets["superkey"]
 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
