@@ -33,7 +33,7 @@ st.markdown("""
 
     /* Colore del placeholder (testo grigio iniziale) */
     input::placeholder {
-        color: #888888;
+        color: #d6e010;
     }
 
     </style>
